@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Category from "../components/Home/Category";
 import Poster from "../components/Home/Poster";
 import Products from "../components/Home/Products";
-import Slider from "../components/Home/slider";
+import Slider from "../components/Home/Slider";
 import axios from 'axios';
 export default function Home() {
   const [mens, setMens] = useState([]);
