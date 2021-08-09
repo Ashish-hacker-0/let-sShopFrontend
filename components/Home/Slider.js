@@ -2,16 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import classes from './Slider.module.css';
 const Slider = () => {
     const [index,setIndex] = useState(0);
-    const timeoutRef = useRef(null);
-
-    function resetTimeout() {
-        if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-        }
-    }
+    
     useEffect(()=>{
-        resetTimeout();
-        timeoutRef.current =  setTimeout(()=>{
+         setTimeout(()=>{
             if(index===2){
                 setIndex(0);
             }else{
@@ -19,7 +12,8 @@ const Slider = () => {
             }
         },3000);
         
-     return ()=> {resetTimeout();}
+        
+     return ()=> {}
     },[index]);
     
     return(
