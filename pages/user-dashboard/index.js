@@ -20,7 +20,7 @@ const UserDash = ({isloggedIn, setIsloggedIn}) => {
       const accessToken = cookies['access_token'];
       console.log(accessToken);
       if(isloggedIn){
-         const user = await axios.get('http://localhost:8001/userDetails',{
+         const user = await axios.get('https://lets-shop-ashish.herokuapp.com/userDetails',{
              headers:{"authorization": `Bearer ${accessToken}`}
          }).catch((err)=>{
            Router.push('/');

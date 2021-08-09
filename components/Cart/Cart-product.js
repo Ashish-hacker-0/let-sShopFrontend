@@ -10,7 +10,7 @@ const CartProduct = ({ c, setLoad }) => {
 
     console.log(c);
     const myLoader=({src})=>{
-        return `http://localhost:8001/static/images/${c.image}`;
+        return `https://lets-shop-ashish.herokuapp.com/static/images/${c.image}`;
     }
     const [qnty, setQnty] = useState(0);
     const [price, setPrice] = useState(24);
@@ -22,7 +22,7 @@ const CartProduct = ({ c, setLoad }) => {
         const accessToken = cookies['access_token'];
 
         setLoad(true);
-        await axios.post('http://localhost:8001/deletecartitem',querystring.stringify({
+        await axios.post('https://lets-shop-ashish.herokuapp.com/deletecartitem',querystring.stringify({
          
            pid:c.id
        }),{
@@ -42,9 +42,9 @@ const CartProduct = ({ c, setLoad }) => {
         setLoad(true);
        
         if(qnty!=1){
-            await axios.post('http://localhost:8001/upatecartItem',querystring.stringify({
+            await axios.post('https://lets-shop-ashish.herokuapp.com/upatecartItem',querystring.stringify({
            pid:c.id,
-           qty:c.qty-1,
+           qty:--c.qty,
         }),{
             headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -65,9 +65,9 @@ const CartProduct = ({ c, setLoad }) => {
        
         console.log(qnty);
         if(qnty!=5){
-            await axios.post('http://localhost:8001/upatecartItem',querystring.stringify({
+            await axios.post('https://lets-shop-ashish.herokuapp.com/upatecartItem',querystring.stringify({
            pid:c.id,
-           qty:c.qty+1,
+           qty:++c.qty,
         }),{
             headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -82,7 +82,7 @@ const CartProduct = ({ c, setLoad }) => {
     return(
         <div className="cart-product">
             <div onClick={deleteItem} > <ImCancelCircle/> </div>
-            <div>  <Image loader={myLoader} src={`http://localhost:8001/static/images/${c.image}`} height="150px" width="190px"/> </div>
+            <div>  <Image loader={myLoader} src={`https://lets-shop-ashish.herokuapp.com/static/images/${c.image}`} height="150px" width="190px"/> </div>
             <div> {c.name} </div>
             <div> {'\u20B9'}{(c.total/c.qty)}.00 </div>
             <div> <span>{<span><AiOutlineMinusCircle onClick={decreaseQty}/></span>} <p> {c.qty} </p> {<span><AiOutlinePlusCircle onClick={increaseQty} /></span>} </span> </div>

@@ -4,11 +4,11 @@ const Order = ({o}) => {
     const price =10;
     const qnty  = 4;
     const myLoader=({src})=>{
-        return `http://localhost:8001/static/images/${o.image}`;
+        return `https://lets-shop-ashish.herokuapp.com/static/images/${o.image}`;
     }
     return(
         <div className="user-product">
-        <div>  <Image loader={myLoader} src={'null'} height="30px" width="40px"/> </div>
+        <div>  <Image loader={myLoader} src={`https://lets-shop-ashish.herokuapp.com/static/images/${o.image}`} height="30px" width="40px"/> </div>
         <div> {o.name} </div>
         <div> {'\u20B9'}{o.price}.00 </div>
         <div>  {o.qnty} </div>

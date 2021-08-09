@@ -25,7 +25,7 @@ const Checkout = ({isloggedIn}) => {
       const accessToken = cookies['access_token'];
       console.log(accessToken);
       if(isloggedIn){
-          const user = await axios.get('http://localhost:8001/userDetails',{
+          const user = await axios.get('https://lets-shop-ashish.herokuapp.com/userDetails',{
               headers:{"authorization": `Bearer ${accessToken}`}
           }).catch((err)=>{
           console.log(err);
@@ -46,7 +46,7 @@ const Checkout = ({isloggedIn}) => {
     const SubmitOrder = async ()=>{
       setLoad(true);
       const accessToken = cookies['access_token'];
-        await axios.post('http://localhost:8001/submitOrder',querystring.stringify({
+        await axios.post('https://lets-shop-ashish.herokuapp.com/submitOrder',querystring.stringify({
             name:name,
             country:country,
             street:street,

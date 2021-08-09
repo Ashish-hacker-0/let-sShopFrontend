@@ -37,7 +37,7 @@ const Navbar = ({search, setSearch , user, setUser, isloggedIn, setIsloggedIn}) 
     const [loginp, setLoginp] = useState(false);
     const loginApi= (e) => {
         e.preventDefault();
-        Axios.post('http://localhost:8001/login',querystring.stringify({
+        Axios.post('https://lets-shop-ashish.herokuapp.com/login',querystring.stringify({
             username : username,
             password : password
         }), 
@@ -76,7 +76,7 @@ const Navbar = ({search, setSearch , user, setUser, isloggedIn, setIsloggedIn}) 
         formData.append('email',email);
         formData.append('password',newuserpassword);
         const config = { headers: { 'Content-Type': 'application/json' } };
-        Axios.post('http://localhost:8001/newUser',querystring.stringify({
+        Axios.post('https://lets-shop-ashish.herokuapp.com/newUser',querystring.stringify({
             username : newusername,
             password : newuserpassword,
             email : email

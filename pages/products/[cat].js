@@ -12,7 +12,7 @@ const Products = () => {
     const {query} = Router;
     console.log(query);
     useEffect(async ()=>{
-        await axios.get(`http://localhost:8001/category/${query.cat}`)
+        await axios.get(`https://lets-shop-ashish.herokuapp.com/category/${query.cat}`)
         .then(async (res)=>{
             console.log(res);
             await setProducts(res.data);

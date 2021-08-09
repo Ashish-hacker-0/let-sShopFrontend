@@ -9,10 +9,10 @@ export default function Home() {
   const [women, setWomen] = useState([]);
   
   useEffect(async ()=>{
-    await axios.get('http://localhost:8001/category/Mens')
+    await axios.get('https://lets-shop-ashish.herokuapp.com/category/Mens')
     .then((res)=>setMens(res.data));
 
-    await axios.get('http://localhost:8001/category/Women')
+    await axios.get('https://lets-shop-ashish.herokuapp.com/category/Women')
     .then((res)=>setWomen(res.data));
   },[])
 

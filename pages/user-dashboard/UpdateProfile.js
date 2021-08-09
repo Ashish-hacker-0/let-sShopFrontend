@@ -26,7 +26,7 @@ const UpdateProfile = ({isloggedIn, setIsloggedIn}) => {
         const accessToken = cookies['access_token'];
         e.preventDefault();
         if(password===confirm){
-            axios.post('http://localhost:8001/updateProfile',
+            axios.post('https://lets-shop-ashish.herokuapp.com/updateProfile',
                 querystring.stringify({
                     name:name,
                     password:password

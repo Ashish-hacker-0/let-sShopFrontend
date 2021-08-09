@@ -13,7 +13,7 @@ const Search = () => {
     // const [query, setQuery] = useState('');
     useEffect(async ()=>{
         console.log(query);
-        await axios.get(`http://localhost:8001/search?query=${query.query}`)
+        await axios.get(`https://lets-shop-ashish.herokuapp.com/search?query=${query.query}`)
         .then(async (res)=>{
             console.log(res);
             if(res.status===200){

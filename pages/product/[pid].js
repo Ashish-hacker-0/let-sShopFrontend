@@ -16,7 +16,7 @@ const ProductDetail = () => {
     const {query} =Router;
     const [load, setLoad] = useState(true);
     const myLoader=({src})=>{
-        return `http://localhost:8001/static/images/${product.image}`;
+        return `https://lets-shop-ashish.herokuapp.com/static/images/${product.image}`;
     }
     const [qnty, setQnty] = useState(1);
     const [product, setProduct] = useState({});
@@ -26,7 +26,7 @@ const ProductDetail = () => {
     useEffect(async ()=>{
        const pid = query.pid;
        console.log("Product UseEffect");
-       await axios.get(`http://localhost:8001/product/${pid}`)
+       await axios.get(`https://lets-shop-ashish.herokuapp.com/product/${pid}`)
        .then(async (res)=>{
          if(res.status==200){
            await setProduct(res.data);
@@ -36,7 +36,7 @@ const ProductDetail = () => {
        
     },[query]);
     useEffect(async()=>{
-      await axios.get(`http://localhost:8001/category/${product.cat}`)
+      await axios.get(`https://lets-shop-ashish.herokuapp.com/category/${product.cat}`)
         .then(async (res)=>{
             console.log(res);
             await setProducts(res.data);
@@ -50,7 +50,7 @@ const ProductDetail = () => {
       const accessToken = cookies['access_token'];
       console.log(product);
       if(accessToken){
-      await axios.post('http://localhost:8001/addtocart',querystring.stringify({
+      await axios.post('https://lets-shop-ashish.herokuapp.com/addtocart',querystring.stringify({
          
            id:product._id,
            name:product.name,
@@ -82,7 +82,7 @@ const ProductDetail = () => {
         {!load&&<div className="product-page">
             <div className="product-detail">
                 <div>
-                  <Image loader={myLoader} src={`http://localhost:8001/static/images/${product.image}`} height="500px" width="490px"/>
+                  <Image loader={myLoader} src={`https://lets-shop-ashish.herokuapp.com/static/images/${product.image}`} height="500px" width="490px"/>
                 </div>
                 <div>
                     <p>{product.name}</p>

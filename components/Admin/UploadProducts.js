@@ -22,7 +22,7 @@ const UploadProducts = () => {
       formData.append('image',image);
       console.log(formData);
 
-      axios.post('http://localhost:8001/newProduct',formData)
+      axios.post('https://lets-shop-ashish.herokuapp.com/newProduct',formData)
       .then((response)=>{
         setStatus(response.status);
       })
