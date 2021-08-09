@@ -1,0 +1,106 @@
+/* .slidershow{
+   height: 60vh;
+} */
+.slidercontainer{
+    white-space: nowrap;
+    animation: 1s ease-in;
+}
+.slider{
+    display: inline-block;
+    background-size: contain;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding: 150px 0;
+    overflow: hidden;
+    background-position: center;
+} 
+.slider p{
+    font-size: 80px;
+    font-weight: 600;
+    
+}
+.slider button{ 
+    padding: 20px 60px;
+    font-size: 13px;
+    margin: 50px 0;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+
+}
+.slider ul{
+    list-style: none;
+    padding: 40px;
+   background-color: rgba(0, 0, 0, 0.466);
+}
+.slider ul li{
+    display: inline;
+    padding: 30px;
+    font-weight: 600;
+}
+.slider:nth-child(1){
+    background-image: url('../../public/men_slider.jpg');
+}
+.slider:nth-child(2){
+    background-image: url('../../public/women_slider.jpg');
+}
+.slider:nth-child(3){
+    background-image: url('../../public/kid_slider.jpg');
+}
+@media screen and (max-width: 800px) {
+    .slidercontainer{
+        white-space: nowrap;
+        animation: 1s ease-in;
+    }
+    .slider{
+        display: inline-block;
+        background-size: contain;
+        background-size: cover;
+        text-align: center;
+        height: 60vh;
+        width:100vw;
+        color: white;
+        padding: 80px 0;
+        
+    } 
+    .slider p{
+        text-align: center;
+        overflow:visible;
+        width: 100%;
+        font-size: 26px;
+        align-self: center;
+        font-weight: 600;
+        
+    }
+    .slider button{ 
+        padding: 20px 60px;
+        font-size: 13px;
+        margin: 60px 0;
+        font-weight: 600;
+        border: none;
+        background-color: white;
+    
+    }
+    .slider ul{
+        list-style: none;
+        padding: 20px;
+       background-color: rgba(0, 0, 0, 0.466);
+    }
+    .slider ul li{
+        display: inline;
+        padding: 10px;
+        font-weight: 600;
+    }
+    .slider:nth-child(1){
+        background-image: url('../../public/men_slider.jpg');
+    }
+    .slider:nth-child(2){
+        background-image: url('../../public/women_slider.jpg');
+    }
+    .slider:nth-child(3){
+        background-image: url('../../public/kid_slider.jpg');
+    }
+}

@@ -1,0 +1,181 @@
+.navbar ul{
+   list-style: none;
+   display: flex;
+}
+.navbar{
+}
+.navbar .top{
+    position: relative;
+    z-index: 101;
+    background-color: #EEEEEE;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 12px;
+}
+.navbar .top ul{
+    justify-content: space-between;
+}
+.navbar .middle{
+    z-index: 101;
+    position: relative;
+    background-color: white;
+    color:black;
+    padding: 25px 50px;
+    font-size: 20px;
+}
+.navbar .middle ul{
+    justify-content: space-between;
+    align-content: center;
+}
+.navbar .middle ul li{
+    cursor: pointer;
+}
+.navbar .middle ul li:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .middle ul li:nth-child(1) p{
+    padding: 0 5px;
+}
+.navbar .middle ul li:nth-child(1) p:nth-child(1){
+    font-size: 15px;
+}
+.navbar .middle ul li:nth-child(2){
+    font-size: 30px;
+    font-weight: 550;
+}
+.navbar .footer{
+    z-index: 101;
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 550;
+}
+.navbar .footer ul{
+    justify-content: center;
+}
+.navbar .footer ul li{
+    padding: 0 35px;
+}
+.navbar .stick{
+    
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    position:fixed;
+    z-index: 100;
+    background-color: black;
+    width: 100vw;
+    color: white;
+    font-size: 21px;
+    font-weight: 550;
+    padding: 5px 40px;
+}
+.navbar .stick .title{
+    width: 40vw;
+    flex: 1;
+}
+.stick ul{
+    align-items: center;
+}
+.navbar .stick ul li{
+    padding: 0 20px;
+    font-size: 15px;
+    
+}
+@media screen and (max-width: 800px) {
+    .navbar ul{
+        list-style: none;
+        display: flex;
+     }
+     .navbar{
+     }
+     .navbar .top{
+         position: relative;
+         z-index: 101;
+         background-color: #EEEEEE;
+         justify-content: space-between;
+         padding: 2px;
+         font-size: 7px;
+     }
+     .navbar .top ul{
+         justify-content: space-between;
+     }
+     .navbar .middle{
+         z-index: 101;
+         position: relative;
+         background-color: white;
+         color:black;
+         padding: 5px 5px;
+         font-size: 12px;
+     }
+     .navbar .middle ul{
+         justify-content: space-between;
+         align-content: center;
+     }
+     .navbar .middle ul li:nth-child(1){
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .navbar .middle ul li:nth-child(1) p{
+         padding: 0 5px;
+     }
+     .navbar .middle ul li:nth-child(1) p:nth-child(1){
+         font-size: 10px;
+     }
+     .navbar .middle ul li:nth-child(2){
+         font-size: 20px;
+         font-weight: 550;
+     }
+     .navbar .middle ul li:nth-child(3){
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 20%;
+     }
+     .navbar .footer{
+         z-index: 101;
+         position: relative;
+         background-color: black;
+         color: white;
+         padding: 3px 0;
+         font-size: 12px;
+         font-weight: 550;
+     }
+     .navbar .footer ul{
+         justify-content: center;
+     }
+     .navbar .footer ul li{
+         padding: 0 15px;
+     }
+     .navbar .stick{
+         
+         display: flex;
+         justify-content: space-between;
+         top: 0;
+         position:fixed;
+         z-index: 100;
+         background-color: black;
+         width: 100vw;
+         color: white;
+         font-size: 15px;
+         font-weight: 550;
+         padding: 10px 10px;
+     }
+     .navbar .stick .title{
+         width: 40vw;
+         flex: 1;
+     }
+     .stick ul{
+         align-items: center;
+     }
+     .navbar .stick ul li{
+         padding: 0 8px;
+         font-size: 10px;
+         
+     }
+}
