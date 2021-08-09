@@ -39,6 +39,8 @@
          padding: 20px;
          margin: 20px;
          background-position: center;
+         background-repeat: no-repeat;
+         
          background-size: cover;
      }
      .category .images div:nth-child(1){
