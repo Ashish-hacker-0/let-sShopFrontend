@@ -43,7 +43,7 @@
          background-size:cover;
     }
     .category .images div:nth-child(1){
-        background-image: url('../../public/men_section.jpg');
+        background-image: url('../../public/men_sectionm.jpg');
     }
     .category .images div:nth-child(2){
         background-position-x: -200px;
