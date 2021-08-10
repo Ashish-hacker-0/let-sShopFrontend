@@ -60,6 +60,12 @@ const Checkout = ({isloggedIn}) => {
               "authorization": `Bearer ${accessToken}`
             }
           });
+          setName('');
+          setStreet('');
+          setTown('');
+          setState('');
+          setNumber('');
+          setPost('');
           setSubmit(true);
           setLoad(false);
           

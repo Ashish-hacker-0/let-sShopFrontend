@@ -36,17 +36,17 @@
     .category .images div{
          height: 70vh;
          width: 80%;
-         padding: 20px;
-         margin: 20px;
+         padding: 10px;
+         margin: 10px;
          background-position: center;
          background-repeat: no-repeat;
-         background-size: cover;
+         background-size:cover;
     }
     .category .images div:nth-child(1){
         background-image: url('../../public/men_section.jpg');
     }
     .category .images div:nth-child(2){
-        background-position-x: -160px;
+        background-position-x: -200px;
         background-image: url('../../public/women_section.jpg');
     }
     .category .images div:nth-child(3){

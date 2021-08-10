@@ -27,6 +27,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 .poster1{
   background-image: url('../public/couple1.jpg');
@@ -870,7 +871,7 @@ button:hover{
   }
   .products{
     white-space: wrap;
-    width: 95%;
+    width: 100%;
     overflow: hidden;
     
   }
@@ -881,20 +882,20 @@ button:hover{
     display: inline-block;
     width: 50%;
     overflow-x: hidden;
-    padding: 20px;
+    padding: 10px;
     transition: 0.3s ease-in;
   }
   .product:hover{
-    padding: 18px;
+    padding: 8px;
   }
   .productContainer{
-    padding: 30px;
+    padding: 10px;
     display: flex;
     
     justify-content: space-between;
   }
   .productContainer .slider{
-    display: none;
+    /* display: none; */
     align-items: center;
    
   }
@@ -1011,7 +1012,7 @@ button:hover{
     width: 100%;
   }
   .sproduct .image{
-    background-color: #F0F0F0;
+    background-color:none;
   }
   .sproduct .detail p:nth-child(1){
      font-size: 16px;
@@ -1053,10 +1054,10 @@ button:hover{
     flex-direction: column;
   }
   .product-detail div:nth-child(1){
-    padding: 50px;
+    padding: 10px;
   }
   .product-detail div:nth-child(2){
-    padding: 30px;
+    padding: 15px;
     padding-right:0 ;
     padding-top: 0;
   }
@@ -1116,10 +1117,14 @@ button:hover{
     color: tomato;
   }
   .product-page .related-product{
-    padding: 30px;
+    padding: 0px;
     justify-content: space-between;
     flex-direction:column;
+    align-items: center;
     display: flex;
+  }
+  .product-page .related-product .sproduct{
+    padding-top: 15px;
   }
   .related .title{
     font-size: 25px;
@@ -1438,11 +1443,16 @@ button:hover{
   .login-div .title .active{
     background-color: lightgray;
   }
-  .login-div .login-form div:nth-child(1){
+  .login-div .login-form div:nth-child(1) form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+ }
+  .login-div .login-form .form{
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 50px 10px;
+     padding: 0px 0px;
   }
   .login-div .login-form div:nth-child(1) div{
     width: 100%;
@@ -1450,10 +1460,10 @@ button:hover{
   .login-div .login-form input{
     padding: 10px;
     margin-bottom: 15px;
-    width: 90%;
+    width: 100%;
   }
   .login-div .login-form p{
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .login-div .login-form button{
     margin-top: 10px;

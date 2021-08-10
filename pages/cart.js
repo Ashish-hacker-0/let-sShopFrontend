@@ -12,8 +12,7 @@ const Cart = ({isloggedIn}) => {
   const Router = useRouter();
   const [price,setPrice] = useState(0);
   const [load,setLoad] = useState(true);
-  useEffect(async()=>{
-    
+  useEffect(async ()=>{
     const accessToken = cookies['access_token'];
     console.log(accessToken);
     if(isloggedIn){
@@ -33,7 +32,7 @@ const Cart = ({isloggedIn}) => {
       }
     }
     setLoad(false);
-  },[load]);
+  },[load,isloggedIn]);
   useEffect(async ()=> {
     const accessToken = cookies['access_token'];
     console.log(accessToken);
@@ -55,7 +54,7 @@ const Cart = ({isloggedIn}) => {
         setPrice(totalp);
       }
     }
-  },[load]);
+  },[load,isloggedIn]);
   const checkoutProceed = () => {
     setLoad(true);
     console.log('checkout');

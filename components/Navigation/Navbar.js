@@ -126,11 +126,11 @@ const Navbar = ({search, setSearch , user, setUser, isloggedIn, setIsloggedIn}) 
     let form;
     if(lactive){
         form=(
-            <div>
+            <div className="form">
             <form onSubmit={loginApi} >
             <p>{msg&&<p style={{color:'red'}}>* {Msg}</p>}</p>
             <input placeholder="UserName"  value={username} onChange={(e)=>setUsername(e.target.value)} />
-            <input placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)} />
+            <input placeholder="Password" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
             <p>Lost Your Password?</p>
 
             <div>
@@ -142,7 +142,7 @@ const Navbar = ({search, setSearch , user, setUser, isloggedIn, setIsloggedIn}) 
         )
     }else{
         form=(
-            <div>
+            <div className="form">
             <form onSubmit={RegisterApi}  >
             {registererror&&<p style={{color:'red'}}>* Username or Email already exist</p>}
             {registersucess&&<p style={{color:'green'}}>* Successfully created The User Please Login</p>}
