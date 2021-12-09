@@ -1,34 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h2>Let's Shop - Ecommerce Web App</h2>
+<p>Let's Shop is an ecommerce app with almost all the functionality that a ecommerce app should have.</p>
 
-## Getting Started
+<h2>Live Demo <a href="https://letsshop.vercel.app/" target="_blank" >Let's Shop</a></h2>
+<h3>Home Page</h3>
+<p>Desktop View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639018474/Screenshot_801_suk3cp.png" style="display:'inline'" />
+<p>Phone View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639018543/Screenshot_800_gxwu4u.png" style="display:'inline'"/>
 
-First, run the development server:
+<h3>Login Page</h3>
+<p>Desktop View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019111/Screenshot_813_fnxql0.png" style="display:'inline'" />
+<p>Phone View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019086/Screenshot_812_ebquzr.png" style="display:'inline'"/>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<h3>Search Result Page</h3>
+<p>Desktop View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019111/Screenshot_814_patkek.png" style="display:'inline'" />
+<p>Phone View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019110/Screenshot_815_gz2oyx.png" style="display:'inline'"/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h3>Product Details Page</h3>
+<p>Desktop View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019110/Screenshot_816_g28xwc.png" style="display:'inline'" />
+<p>Phone View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019110/Screenshot_817_w96vep.png" style="display:'inline'"/>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<h3>Cart Page</h3>
+<p>Desktop View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019109/Screenshot_818_ojuvkg.png" style="display:'inline'" />
+<p>Phone View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019109/Screenshot_819_micyic.png" style="display:'inline'"/>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<h3>Checkout Page</h3>
+<p>Desktop View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019109/Screenshot_820_mdlw3f.png" style="display:'inline'" />
+<p>Phone View</p>
+<img src="https://res.cloudinary.com/dqgbjb6pf/image/upload/v1639019109/Screenshot_821_dzr1qj.png" style="display:'inline'"/>
+<h2>Functionality and Features</h2>
+<ul>
+  <li>JWT authentication</li>
+  <li>Admin Panel to upload products, manage Users and Check Orders.</li>
+  <li>Search Result</li>
+  <li>Search Filter</li>
+  <li>Add To Cart</li>
+  <li>Checkout</li>
+  <li>User Dashboard to see orders and update Profile.</li>
+</ul>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2>TOOLS AND TECHNOLOGY</h2>
+<table>
+   <tr>
+     <th>Front-End</th>
+     <th>Back-End</th>
+  </tr> 
+   <tr>
+     <td>React JS</td>
+     <td>Node Js</td>
+  </tr> 
+   <tr>
+     <td>Next JS</td>
+     <td>Express JS</td>
+  </tr> 
+   <tr>
+     <td>axios</td>
+     <td>multer</td>
+  </tr> 
+   <tr>
+     <td>jwt-decode</td>
+     <td>bcryptjs</td>
+  </tr> 
+   <tr>
+     <td>react-cookie</td>
+     <td>jsonwebtoken</td>
+  </tr> 
+   <tr>
+     <td></td>
+     <td>mongoDB</td>
+  </tr> 
+   <tr>
+     <td></td>
+     <td>mongoose</td>
+  </tr> 
+</table>
